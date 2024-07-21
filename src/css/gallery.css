@@ -1,0 +1,48 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.gallery {
+  padding: 24px 0;
+  margin: 0;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1128px;
+  margin: 0 auto;
+  row-gap: 24px;
+  column-gap: 24px;
+}
+
+.sl-overlay {
+  background: #2e2f42 !important;
+}
+
+.sl-close,
+.sl-prev,
+.sl-next,
+.sl-counter {
+  color: #fff !important;
+}
+
+.gallery-item {
+  width: calc((100% - (2 * 24px)) / 3);
+}
+
+.gallery-link {
+  display: block;
+  width: 360px;
+  height: 200px;
+}
+
+.gallery-image {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  transition: transform 0.3s;
+}
+
+.gallery-image:hover {
+  transform: scale(1.045);
+}
